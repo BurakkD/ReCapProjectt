@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Const;
+using Core.Utilities.Result;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -20,37 +22,37 @@ namespace Business.Concrete
 
         
 
-        public void Add(Car car)
+        public IResult Add(Car car)
         {
-            if (car.Description.Length>2 )
-            {
-                _cardal.Add(car);
-                
-                
-                Console.WriteLine(car.Id);
-            }
+
+           
+           _cardal.Add(car);
+           return new SuccessResult(Message.SuccessMessage);
+
         }
 
-        public void Delete(Car car)
+        public IResult Delete(Car car)
         {
             _cardal.Delete(car);
+            return new SuccessResult(Message.SuccessMessage);
         }
 
-        public List<Car> GetAll()
+        public IDataResult<List<Car>> GetAll()
         {
-            return _cardal.GetAll();
+            
+            return new SuccessDataResult<List<Car>>(_cardal.GetAll(),"başarılı");
             
         }
 
-        public List<Car> GetCarsByBrandId(int Id)
+        public IDataResult<List<Car>> GetCarsByBrandId(int Id)
         {
-           return _cardal.GetAll(c => c.BrandsId == Id);
+           return new SuccessDataResult<List<Car>>(_cardal.GetAll(c => c.BrandsId == Id),"işlem başarılı");
             
         }
 
-        public List<Car> GetCarsByColorId(int Id)
+        public IDataResult<List<Car>> GetCarsByColorId(int Id)
         {
-            return _cardal.GetAll(c => c.ColorsId == Id);
+            return new SuccessDataResult<List<Car>> (_cardal.GetAll(c => c.ColorsId == Id),"işlem başarılı");
         }
     }
 }

@@ -10,21 +10,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //ColorManager();
-            //carManager();
+            carManager();
+                        
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             //static void carManager()
             //{
             //    Car carss = new Car();
@@ -38,19 +26,22 @@ namespace ConsoleUI
 
             //    foreach (var item in carmanager.GetAll())
             //    {
-            //        Console.WriteLine(item.Description,"merha");
+            //        Console.WriteLine(item.Description);
             //    }
             //}
 
         }
 
-        //private static void ColorManager()
-        //{
-        //    ColorManager colorManager = new ColorManager(new EfColorDal());
-        //    foreach (var item in colorManager.GetAll())
-        //    {
-        //        Console.WriteLine(item.ColorName);
-        //    }
-        //}
+        private static void carManager()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
+
+            foreach (var item in carManager.GetAll)
+            {
+
+            }
+            
+
+        }
     }
 }
