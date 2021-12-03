@@ -32,13 +32,13 @@ namespace ConsoleUI
 
         }
 
-        private static void carManager()
+        public static void carManager()
         {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var item in carManager.GetAll)
+            foreach (var item in carManager.GetAll().Data)
             {
-
+                Console.WriteLine(item.Description);
             }
             
 

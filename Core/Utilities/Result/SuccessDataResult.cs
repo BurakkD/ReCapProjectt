@@ -8,8 +8,11 @@ namespace Core.Utilities.Result
     {
         public SuccessDataResult(T data, string message):base(data,true,message)
         {
-            
+          
+
         }
+
+
 
     }
 }
