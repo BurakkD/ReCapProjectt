@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{F93D38AB-655B-4511-919A-EB81E9E3D8DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepAPI", "WepAPI\WepAPI.csproj", "{615918B7-1B0F-44D5-B518-FDA70E18076E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F93D38AB-655B-4511-919A-EB81E9E3D8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93D38AB-655B-4511-919A-EB81E9E3D8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93D38AB-655B-4511-919A-EB81E9E3D8DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615918B7-1B0F-44D5-B518-FDA70E18076E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615918B7-1B0F-44D5-B518-FDA70E18076E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615918B7-1B0F-44D5-B518-FDA70E18076E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615918B7-1B0F-44D5-B518-FDA70E18076E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

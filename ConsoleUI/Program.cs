@@ -10,9 +10,13 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            carManager();
-                        
+            //carManager();
 
+            //ColorManager colorManager = new ColorManager(new EfColorDal());
+            //foreach (var item in colorManager.GetAll())
+            //{
+            //    Console.WriteLine(item.ColorName);
+            //}
             //static void carManager()
             //{
             //    Car carss = new Car();
@@ -38,6 +42,7 @@ namespace ConsoleUI
 
             foreach (var item in carManager.GetAll().Data)
             {
+                
                 Console.WriteLine(item.Description);
             }
             
